@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>금요기도회 안내</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./img/gil-church.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>📍금요기도회 안내</h2>
+      <label for="date">날짜 선택:</label>
+      <input type="date" id="date" />
+
+      <label for="leader">주관 선택:</label>
+      <select id="leader" onchange="updateMembers()">
+        <option value="">선택하세요</option>
+        <option value="건축위원회">건축위원회</option>
+        <option value="바울전도회">바울전도회</option>
+        <option value="한나전도회">한나전도회</option>
+        <option value="마리아전도회">마리아전도회</option>
+        <option value="에스더전도회">에스더전도회</option>
+        <option value="한나에스더전도회">한나에스더전도회</option>
+        <option value="다니엘부">다니엘부</option>
+        <option value="대학청년부">대학청년부</option>
+        <option value="중고등부">중고등부</option>
+        <option value="유초등부">유초등부</option>
+      </select>
+
+      <div class="output" id="result"></div>
+      <button class="copy-btn" onclick="copyToClipboard()">복사하기</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
