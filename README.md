@@ -1,1 +1,0 @@
-# Friday-Prayer-Meeting-Information
